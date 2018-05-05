@@ -318,13 +318,13 @@
 	modele["Skoda"][2] = ["Skoda", "Octavia"];
 
 	//marque 31
-	modele["Ssandyong"]=[];
-	modele["Ssandyong"][0] = ["Ssandyong", "Actyopn Sports"];
-	modele["Ssandyong"][1] = ["Ssandyong", "Korando"];
-	modele["Ssandyong"][2] = ["Ssandyong", "Rexton"];
-	modele["Ssandyong"][3] = ["Ssandyong", "Rodius"];
-	modele["Ssandyong"][4] = ["Ssandyong", "Tivoli"];
-	modele["Ssandyong"][5] = ["Ssandyong", "XLV"];
+	modele["Ssangyong"]=[];
+	modele["Ssangyong"][0] = ["Ssangyong", "Actyopn Sports"];
+	modele["Ssangyong"][1] = ["Ssangyong", "Korando"];
+	modele["Ssangyong"][2] = ["Ssangyong", "Rexton"];
+	modele["Ssangyong"][3] = ["Ssangyong", "Rodius"];
+	modele["Ssangyong"][4] = ["Ssangyong", "Tivoli"];
+	modele["Ssangyong"][5] = ["Ssangyong", "XLV"];
 
 	//marque 32
 	modele["Suzuki"]=[];
