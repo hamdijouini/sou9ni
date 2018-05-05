@@ -51,211 +51,62 @@
    </head>
 
   <body>
-    <!--Top -->
-      <div class="top-container">
-        <div class="container">
-          <div class="row wow slideInDown">
-            <div class="col-md-12">
-              <div class="social-icons">
-                <ul>
-                  <li><a href="#"><span class="icon twitter-icon"></span></a></li>
-                  <li><a href="#"><span class="icon youtube-icon"></span></a></li>
-                  <li><a href="#"><span class="icon facebook-icon"></span></a></li>
+   
+    <!-- Top header-->
+	  <div class="top-container">
+	    <div class="container">
+	      <div class="row wow slideInDown">
+		<div class="col-md-12">
+		  <div class="social-icons">
+		    <ul>
+		      <li><a href="#"><span class="icon twitter-icon"></span></a></li>
+		      <li><a href="#"><span class="icon youtube-icon"></span></a></li>
+		      <li><a href="#"><span class="icon facebook-icon"></span></a></li>
 
-                </ul>
-              </div>
-              <div class="top-item">
-                <a class="link-item" href="#" data-toggle="modal" data-target="#myModel1"><img src="images/contact.png"/>Connexion</a>
-              </div>
+		    </ul>
+		  </div>
+		  <div class="top-item">
+			<img src="images/contact.png"/>
+			<a class='link-item' href="#">Connexion</a>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	  </div>
 
-              <div class="modal fade" id="myModel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="myModalLabel1">Connexion</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <span class="container">Vous n'avez pas un compte ? <u><a href="#" data-toggle="modal" data-target="#myModel3">S'inscrire</u></a></span>
-                      <form method="POST" action="" class="popup-form">
-                        <div class="form-group">
-                          <label for="InputEmail1">Adresse mail</label>
-                          <input type="email" class="form-control" id="InputEmail1" name="email" placeholder="Entrer votre adresse mail">
-                          <small id="emailHelp1" class="form-text text-muted">Nous ne partagerons jamais votre email avec quelqu'un.</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="InputPassword">Mot de passe</label>
-                          <input type="password" class="form-control" id="InputPassword" name="mdp" placeholder="Entrer votre mot de passe">
-                          <small id="passwordHelp" class="form-text text-muted"><a href="#" data-toggle="modal" data-target="#myModel2"><u>Mot de passe oublié ?</u></a></small>
-                        </div>
-                        <div class="form-group text-center">
-                          <button type="submit" class="btn btn-primary">Se connecter</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
+	  <!-- Navigation -->
+	  <nav class="navbar navbar-expand-lg sticky-top">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.php">
+		<img class="logo" src="images/logo.png" alt="logo">
+	      </a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent22"
+	  aria-expanded="true" aria-label="Toggle navigation">
+		<div class="animated-icon4">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+	      </button>
 
-              <div class="modal fade" id="myModel2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="myModalLabel2">Récupérer votre mot de passe</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span class="model2" aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                      <form method="POST" action="" class="popup-form">
-                        <div class="form-group">
-                          <label for="InputEmail2">Adresse mail</label>
-                            <input type="email" class="form-control" id="InputEmail2" name="email" placeholder="Entrer votre adresse mail">
-                            <small id="emailHelp2" class="form-text text-muted">Nous ne partagerons jamais votre email avec quelqu'un.</small>
-                        </div>
-                        <div class="form-group text-center">
-                          <button type="submit" class="btn btn-primary">Envoyer</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="modal fade" id="myModel3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="myModalLabel2">Créer un nouveau compte</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span class="model3" aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                      <form method="POST" action="" class="popup-form">
-                          <input type="hidden" name="id" id="id">
-                        <div class="form-group">
-                          <label for="nom">Nom</label>
-                            <input id="nom" name="nom" class="form-control-popup form-control-popup-nom" placeholder="Entrer votre nom" required>
-                            <small class="form-text error-message error-message-nom">Le nom doit être sous la forme de: "foulen"</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="prenom">Prénom</label>
-                            <input id="prenom" name="prenom" class="form-control-popup form-control-popup-prenom" placeholder="Entrer votre prénom" required>
-                            <small class="form-text error-message error-message-prenom">Le prénom doit être sous la forme de: "foulen" ou "ben foulen"</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="tel">Numéro de téléphone</label>
-                            <input id="tel" name="tel" class="form-control-popup form-control-popup-tel" placeholder="Entrer votre numéro de téléphone" required>
-                            <small class="form-text error-message error-message-tel">Le numéro de téléphone doit être sous la forme de: "12345678"</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="email">Adresse mail</label>
-                            <input id="email" name="email" class="form-control-popup form-control-popup-email" placeholder="Entrer votre adresse mail" required>
-                            <small class="form-text error-message error-message-email">L'adresse mail doit être sous la forme de: "xxxx@xxx.xx"</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="adresse">Adresse</label>
-                            <input id="adresse" name="adresse" class="form-control-popup form-control-popup-adresse" placeholder="Entrer votre adresse" required>
-                            <small class="form-text error-message error-message-adresse">L'adresse doit être sous la forme de cet exemple: "Av. Hédi Nouira, Résidence Maya D1 Ennasr II"</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="region">Région</label>
-                            <select name="region" class="form-control-popup form-control-popup-region" id="region" required>
-                            <option value="" disabled="disabled" selected="selected">Veuillez choisir votre région</option>
-                            <option value="Beja">Beja</option>
-                            <option value="Bizerte">Bizerte</option>
-                            <option value="Gabes">Gabes</option>
-                            <option value="Gafsa">Gafsa</option>
-                            <option value="Grand Tunis">Grand Tunis</option>
-                            <option value="Jendouba">Jendouba</option>
-                            <option value="Kairouan">Kairouan</option>
-                            <option value="Kasserine">Kasserine</option>
-                            <option value="Kebili">Kebili</option>
-                            <option value="Le Kef">Le Kef</option>
-                            <option value="Mahdia">Mahdia</option>
-                            <option value="Medenine">Medenine</option>
-                            <option value="Monastir">Monastir</option>
-                            <option value="Nabeul">Nabeul</option>
-                            <option value="Sfax">Sfax</option>
-                            <option value="Sidi Bouzid">Sidi Bouzid</option>
-                            <option value="Siliana">Siliana</option>
-                            <option value="Sousse">Sousse</option>
-                            <option value="Tataouine">Tataouine</option>
-                            <option value="Tozeur">Tozeur</option>
-                            <option value="Zaghouan">Zaghouan</option>
-                          </select>
-                            <small class="form-text error-message error-message-region">Veuillez choisir votre région</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="login">Login</label>
-                            <input id="login" name="login" class="form-control-popup form-control-popup-login" placeholder="Créer un login" required>
-                            <small class="form-text error-message error-message-login">Le login doit être compris entre 5 et 20 caractéres</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="mdp">Mot de passe</label>
-                            <input type="password" id="mdp" name="mdp" class="form-control-popup form-control-popup-mdp" placeholder="Entrer votre mot de passe" required>
-                            <small class="form-text error-message error-message-mdp-1">Votre mot de passe est trop court</small>
-                            <small class="form-text error-message error-message-mdp-2">Votre mot de passe est trop long</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="mdp2">Confirmation de mot de passe</label>
-                            <input type="password" id="mdp2" class="form-control-popup form-control-popup-mdp2" placeholder="Retaper votre mot de passe" required>
-                            <small class="form-text error-message error-message-mdp-3">Les mots de passe ne correspondent pas. Voulez-vous réessayer ?</small>
-                            <small class="form-text error-message error-message-mdp-4">Le mot de passe ne doit pas être vide</small>
-                        </div>
-
-                        <div class="form-group text-center">
-                          <button type="submit" class="btn btn-primary">S'inscrire</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-               </div>
-              </div>
-            </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img class="logo" src="images/logo.png" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-control-popups="navbarSupportedContent22"
-      aria-expanded="true" aria-label="Toggle navigation">
-            <div class="animated-icon4">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">ACHETER UNE VOITURE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">COMMENT ÇA MARCHE ?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">NOUS CONTACTER</a>
-              </li>
-              <li class="nav-item">
-                <span><a class="nav-link" href="#">VENDRE MA VOITURE</a></span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+	      <div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">ACHETER UNE VOITURE</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="demarche.html">COMMENT ÇA MARCHE ?</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">NOUS CONTACTER</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="vendremavoiture.html">VENDRE MA VOITURE</a>
+		  </li>
+		</ul>
+	      </div>
+	    </div>
+	  </nav>
 
    <!-- Header -->
     <header class="header">
@@ -574,185 +425,44 @@
       </div>
    </section>
 
-   <!-- footer -->
-   <footer class="footer">
-     <div class="container">
-       <div class="row  wow slideInRight" data-wow-delay="0s" data-wow-duration="1.3s">
-         <div class="col-md-12">
-           <div class="social-icons">
-             <ul>
-               <li><a href="#"><span class="icon twitter-icon"></span></a></li>
-               <li><a href="#"><span class="icon youtube-icon"></span></a></li>
-               <li><a href="#"><span class="icon facebook-icon"></span></a></li>
-             </ul>
-           </div>
-           <div class="footer-menu">
-             <ul>
-               <li><a class="link-item" href="#">ACHETER UNE VOITURE</a></li>
-               <li><a class="link-item" href="#">COMMENT ÇA MARCHE ?</a></li>
-               <li><a class="link-item" href="#">NOUS CONTACTER</a></li>
-               <li><a class="link-item" href="#" data-toggle="modal" data-target="#myModel1">CONNEXION</a></li>
-             </ul>
-           </div>
-           <div class="modal fade" id="myModel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-             <div class="modal-dialog" role="document">
-               <div class="modal-content">
-                 <div class="modal-header">
-                   <h5 class="modal-title" id="myModalLabel1">Connexion</h5>
-                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                   </button>
-                 </div>
-                 <div class="modal-body">
-                   <span class="container">Vous n'avez pas un compte ? <u><a href="#" data-toggle="modal" data-target="#myModel3">S'inscrire</u></a></span>
-                   <form method="POST" action="" class="popup-form">
-                     <div class="form-group">
-                       <label for="InputEmail1">Adresse mail</label>
-                       <input type="email" class="form-control" id="InputEmail1" name="email" placeholder="Entrer votre adresse mail">
-                       <small id="emailHelp1" class="form-text text-muted">Nous ne partagerons jamais votre email avec quelqu'un.</small>
-                     </div>
-                     <div class="form-group">
-                       <label for="InputPassword">Mot de passe</label>
-                       <input type="password" class="form-control" id="InputPassword" name="mdp" placeholder="Entrer votre mot de passe">
-                       <small id="passwordHelp" class="form-text text-muted"><a href="#" data-toggle="modal" data-target="#myModel2"><u>Mot de passe oublié ?</u></a></small>
-                     </div>
-                     <div class="form-group text-center">
-                       <button type="submit" class="btn btn-primary">Se connecter</button>
-                     </div>
-                   </form>
-                 </div>
-               </div>
-             </div>
-           </div>
+   	<!-- Footer -->
+	<footer class="footer">
+	  <div class="container">
+	    <div class="row  wow slideInRight" data-wow-delay="0s" data-wow-duration="1.3s">
+	      <div class="col-md-12">
+		<div class="social-icons">
+		  <ul>
+		    <li><a href="#"><span class="icon twitter-icon"></span></a></li>
+		    <li><a href="#"><span class="icon youtube-icon"></span></a></li>
+		    <li><a href="#"><span class="icon facebook-icon"></span></a></li>
+		  </ul>
+		</div>
+		<div class="footer-menu">
+		  <ul>
+		    <li><a class="link-item" href="acheterunevoiture.php">ACHETER UNE VOITURE</a></li>
+		    <li><a class="link-item" href="demarche.php">COMMENT ÇA MARCHE ?</a></li>
+		    <li><a class="link-item" href="contact.php">NOUS CONTACTER</a></li>
+		    <li><a class="link-item" href="authentification.php">CONNEXION</a></li>
+		  </ul>
+		</div>
+	      </div>
+	    </div>
+	    <hr/>
+	    <div class="row wow slideInLeft" data-wow-delay="0s" data-wow-duration="1.3s">
+	      <div class="col-md-2 col-sm-12">
+		<img src="images/small-logo.png">
+	      </div>
+	      <div class="col-md-8 col-sm-12">
+		<p>Av. Hédi Nouira, Résidence maya D1 ennasr II
+			+216 71 827 484 | info@soukni.com.tn </p>
+	      </div>
+	      <div class="col-md-2 col-sm-12">
+		<p>MEDIANET</p>
+	      </div>
+	    </div>
+	  </div>
+	</footer>
 
-           <div class="modal fade" id="myModel2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-             <div class="modal-dialog" role="document">
-               <div class="modal-content">
-                 <div class="modal-header">
-                   <h5 class="modal-title" id="myModalLabel2">Récupérer votre mot de passe</h5>
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                       <span class="model2" aria-hidden="true">&times;</span>
-                     </button>
-                 </div>
-                 <div class="modal-body">
-                   <form method="POST" action="" class="popup-form">
-                     <div class="form-group">
-                       <label for="InputEmail2">Adresse mail</label>
-                         <input type="email" class="form-control" id="InputEmail2" name="email" placeholder="Entrer votre adresse mail">
-                         <small id="emailHelp2" class="form-text text-muted">Nous ne partagerons jamais votre email avec quelqu'un.</small>
-                     </div>
-                     <div class="form-group text-center">
-                       <button type="submit" class="btn btn-primary">Envoyer</button>
-                     </div>
-                   </form>
-                 </div>
-               </div>
-             </div>
-           </div>
-
-           <div class="modal fade" id="myModel3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-             <div class="modal-dialog" role="document">
-               <div class="modal-content">
-                 <div class="modal-header">
-                   <h5 class="modal-title" id="myModalLabel2">Créer un nouveau compte</h5>
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                       <span class="model3" aria-hidden="true">&times;</span>
-                     </button>
-                 </div>
-                 <div class="modal-body">
-                   <form method="POST" action="" class="popup-form">
-                       <input type="hidden" name="id" id="id">
-                     <div class="form-group">
-                       <label for="nom">Nom</label>
-                         <input id="nom" name="nom" class="form-control-popup form-control-popup-nom" placeholder="Entrer votre nom" required>
-                         <small class="form-text error-message error-message-nom">Le nom doit être sous la forme de: "foulen"</small>
-                     </div>
-                     <div class="form-group">
-                       <label for="prenom">Prénom</label>
-                         <input id="prenom" name="prenom" class="form-control-popup form-control-popup-prenom" placeholder="Entrer votre prénom" required>
-                         <small class="form-text error-message error-message-prenom">Le prénom doit être sous la forme de: "foulen" ou "ben foulen"</small>
-                     </div>
-                     <div class="form-group">
-                       <label for="tel">Numéro de téléphone</label>
-                         <input id="tel" name="tel" class="form-control-popup form-control-popup-tel" placeholder="Entrer votre numéro de téléphone" required>
-                         <small class="form-text error-message error-message-tel">Le numéro de téléphone doit être sous la forme de: "12345678"</small>
-                     </div>
-                     <div class="form-group">
-                       <label for="email">Adresse mail</label>
-                         <input id="email" name="email" class="form-control-popup form-control-popup-email" placeholder="Entrer votre adresse mail" required>
-                         <small class="form-text error-message error-message-email">L'adresse mail doit être sous la forme de: "xxxx@xxx.xx"</small>
-                     </div>
-                     <div class="form-group">
-                       <label for="adresse">Adresse</label>
-                         <input id="adresse" name="adresse" class="form-control-popup form-control-popup-adresse" placeholder="Entrer votre adresse" required>
-                         <small class="form-text error-message error-message-adresse">L'adresse doit être sous la forme de cet exemple: "Av. Hédi Nouira, Résidence Maya D1 Ennasr II"</small>
-                     </div>
-                     <div class="form-group">
-                       <label for="region">Région</label>
-                         <select name="region" class="form-control-popup form-control-popup-region" id="region" required>
-                         <option value="" disabled="disabled" selected="selected">Veuillez choisir votre région</option>
-                         <option value="Beja">Beja</option>
-                         <option value="Bizerte">Bizerte</option>
-                         <option value="Gabes">Gabes</option>
-                         <option value="Gafsa">Gafsa</option>
-                         <option value="Grand Tunis">Grand Tunis</option>
-                         <option value="Jendouba">Jendouba</option>
-                         <option value="Kairouan">Kairouan</option>
-                         <option value="Kasserine">Kasserine</option>
-                         <option value="Kebili">Kebili</option>
-                         <option value="Le Kef">Le Kef</option>
-                         <option value="Mahdia">Mahdia</option>
-                         <option value="Medenine">Medenine</option>
-                         <option value="Monastir">Monastir</option>
-                         <option value="Nabeul">Nabeul</option>
-                         <option value="Sfax">Sfax</option>
-                         <option value="Sidi Bouzid">Sidi Bouzid</option>
-                         <option value="Siliana">Siliana</option>
-                         <option value="Sousse">Sousse</option>
-                         <option value="Tataouine">Tataouine</option>
-                         <option value="Tozeur">Tozeur</option>
-                         <option value="Zaghouan">Zaghouan</option>
-                       </select>
-                         <small class="form-text error-message error-message-region">Veuillez choisir votre région</small>
-                     </div>
-                     <div class="form-group">
-                       <label for="mdp">Mot de passe</label>
-                         <input type="password" id="mdp" name="mdp" class="form-control-popup form-control-popup-mdp" placeholder="Entrer votre mot de passe" required>
-                         <small class="form-text error-message error-message-mdp-1">Votre mot de passe est trop court</small>
-                         <small class="form-text error-message error-message-mdp-2">Votre mot de passe est trop long</small>
-                     </div>
-                     <div class="form-group">
-                       <label for="mdp2">Confirmation de mot de passe</label>
-                         <input type="password" id="mdp2" class="form-control-popup form-control-popup-mdp2" placeholder="Retaper votre mot de passe" required>
-                         <small class="form-text error-message error-message-mdp-3">Les mots de passe ne correspondent pas. Voulez-vous réessayer ?</small>
-                         <small class="form-text error-message error-message-mdp-4">Le mot de passe ne doit pas être vide</small>
-                     </div>
-
-                     <div class="form-group text-center">
-                       <button type="submit" class="btn btn-primary">S'inscrire</button>
-                     </div>
-                   </form>
-                 </div>
-               </div>
-             </div>
-            </div>
-
-           </div>
-           </div>
-       <hr/>
-       <div class="row wow slideInLeft" data-wow-delay="0s" data-wow-duration="1.3s">
-         <div class="col-md-2 col-sm-12">
-           <img src="images/small-logo.png">
-         </div>
-         <div class="col-md-8 col-sm-12">
-           <p>Av. Hédi Nouira, Résidence maya D1 ennasr II <br/>+216 71 827 484 | info@soukni.com.tn </p>
-         </div>
-         <div class="col-md-2 col-sm-12">
-           <p>MEDIANET</p>
-         </div>
-       </div>
-     </div>
-   </footer>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -770,7 +480,33 @@
 
     <!-- Custom Script JS -->
     <script src="js/script.js"></script>
+	 <!-- Chat Bot-->
+	 <script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiMwODJjNDkiLCJ3ZWIiOnsiYm90SWQiOiI1YWViOGQ5ODEyMGY2ZDAwMTQ1ODY3YTMiLCJ0aGVtZSI6IiMwODJjNDkiLCJsYWJlbCI6IkNoYXQifSwid2VsY29tZVRleHQiOiJWb3VzIGF2ZXogZGVzIHF1ZXN0aW9ucyA/IFZvdXMgdm91bGV6IGVzc2F5ZXIgdW5lIHZvaXR1cmUgPyBDbGlxdWVyIGljaSAhIn0=" async defer></script>
+	 <script>
+	 var chatDiv = document.createElement('div');
+	 chatDiv.className = 'fb-customerchat';
+	 chatDiv.setAttribute('page_id', '295038554365864');
+	 chatDiv.setAttribute('ref', '26142724504b031766688dcc9eb6e10d325dd6c21a3414ab2b');
+	 document.body.appendChild(chatDiv);
 
+	 window.fbAsyncInit = function() {
+	   FB.init({
+	     appId            : '2015199145383303',
+	     autoLogAppEvents : true,
+	     xfbml            : true,
+	     version          : 'v2.12'
+	   });
+	 };
+
+	 (function(d, s, id){
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) {return;}
+	    js = d.createElement(s); js.id = id;
+	    js.src = "https://connect.facebook.net/en_US/sdk.js";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));
+	  </script>
+   
   </body>
 
 </html>
