@@ -69,11 +69,9 @@ body {
     height: 2px;
     max-width: 100%;
     margin-bottom: 8%;
-    
-	background-color: red;
     -webkit-transition: .2s;
-	  -moz-transition: .2s;
-	  -o-transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
     transition: opacity .2s;
 }
 
@@ -99,7 +97,6 @@ body {
 	padding: 15px 82px;
 	font-size: 20px;
 	font-weight: 500;
-
 }
 
 .btn-search:hover{
@@ -122,13 +119,16 @@ label{
 }
 
 .form-control{
-	border: 0;
-	border-bottom: 1px solid #9b9b9b;
-	border-radius: 0%;
+  border: 0;
+  border-bottom: 1px solid #9b9b9b;
+  border-radius: 0%;
   width: 100%;
   padding-left: 0px ;
   padding-top: 8px;
   padding-bottom: 8px;
+  color: #082c49;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .search{
@@ -187,7 +187,7 @@ h4{
 }
 
 .small-card img{
-	padding-right: 10%;
+	padding-right: 8%;
 }
 
 .annonces>.container>.row{
@@ -280,6 +280,20 @@ a.link-annonce{
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
+}
+
+.explorer:hover{
+	background-color: #fff;
+	color: #082c49;
+	transition: all ease-in-out 0.2s;
+	text-decoration: none;
+}
+
+.vendre:hover{
+	background-color: #fff;
+	color: #ff9100;
+	transition: all ease-in-out 0.2s;
+	text-decoration: none;
 }
 
 /** testimonials **/
