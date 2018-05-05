@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/** Header**/
+
+.header{
+    background-image: url("../images/speed.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.header-overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1{
+  padding-top: 5%;
+  color: #fff;
+}
+
+/** Breadcrumb **/
+
+.mybreadcrumb {
+    list-style: none;
+    background-color: transparent;
+    padding-bottom: 5%;
+}
+
+.mybreadcrumb li {
+    display: inline;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.mybreadcrumb-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mybreadcrumb li a:hover {
+    opacity: 0.9;
+    transition: all 0.3s;
+    text-decoration: underline;
+}
+
+/** Content **/
+
+.content{
+  background-color: #f6f6f6;
+  padding-bottom: 5%;
+}
+
+/** Counter **/
+.counter{
+	background-color: #082c49;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	color: #fff;
+}
+
+.item-right{
+	margin-right: -6%;
+}
+
+.col-sm-8{
+	margin-left: -5%;
+}
+
+p{
+	font-size: 0.9em;
+}
+
+/** Form control**/
+
+.form{
+  margin-top: 5%;
+}
+
+label{
+  font-size: 14px;
+  font-weight: 600;
+  color: #082c49;
+}
+
+.required{
+  font-size: 14px;
+  color: #fe2727;
+  font-weight: 600;
+}
+
+.form-control, #description{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #9b9b9b;
+  border-radius: 0%;
+  width: 100%;
+  padding-left: 0px;
+
+}
+
+.form-control:focus{
+	background-color: transparent;
+}
+
+.form-group-description{
+	margin-top: -5%;
+}
+
+.form-group{
+	margin-bottom: 10%;
+}
+
+.title{
+  font-size: 1.2em;
+  margin-left: 1%;
+}
+
+.item{
+  font-size: 1em;
+  font-weight: 200;
+  padding-left: 6%;
+}
+
+.bloc-2{
+	margin-top: -5%;
+}
+
+.red-text{
+  color: #fe2727;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 10%;
+}
+
+input[type="submit"]{
+  background-color: #082c49;
+  color: #fff;
+  border-radius: 0%;
+  border: 0;
+  padding: 6px 26px;
+  margin-right: -45%;
+
+}
+
+.error-msg{
+  border-bottom: 1px solid #fe2727 !important;
+}
+
+.valid-msg{
+  border-bottom: 1px solid #082c49 !important;
+}
+
+#googleMap{
+	margin-top: 6%;
+	height: 92%;
+	width: 100%;
+}

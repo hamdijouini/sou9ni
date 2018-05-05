@@ -1,0 +1,39 @@
+@media only screen and (min-width: 1200px){
+
+  .item-left{
+    margin-left: -4%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .form-group-right{
+    margin-left: 0%;
+    width: 100%
+  }
+
+  .red-text{
+    margin-left: 8%;
+    margin-top: 2%;
+  }
+
+  .item-right{
+    margin-left: 0%;
+  }
+
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px){
+
+    input[type="reset"]{
+      margin-left: -40%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+  .pub1 img, .pub2 img{
+      margin-left: 2%;
+      margin-top: 8%;
+      margin-bottom: 4%;
+  }

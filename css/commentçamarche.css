@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/** Header**/
+
+.header{
+	z-index: 1;
+    background-image: url("../images/speed.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.header-overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1{
+  padding-top: 5%;
+  color: #fff;
+}
+
+/** Breadcrumb **/
+
+.mybreadcrumb {
+    list-style: none;
+    background-color: transparent;
+    padding-bottom: 5%;
+}
+
+.mybreadcrumb li {
+    display: inline;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.mybreadcrumb-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mybreadcrumb li a:hover {
+    opacity: 0.9;
+    transition: all 0.3s;
+    text-decoration: underline;
+}
+
+/** Content **/
+
+.content{
+	background-color: #f9f9f9;
+}
+
+h5{
+	color: #082c49;
+	margin-left: 2%;
+	margin-bottom: 4%;
+	margin-top: 3%;
+	padding-left: 1%;
+	border-left: 8px solid #ff9100;
+}
+
+.item{
+	color: #082c49;
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+
+.item:hover{
+	background-color: #f9f9f9;
+	box-shadow: 0px 5px 20px rgba(8,44,73,0.22);
+	transition: all ease-in-out 0.3s;
+	transform: scale(1.02);
+
+}
+
+.item-title{
+	padding-top: 6%;
+	font-weight: 500;
+	font-size: 1em;
+}
+
+.item-text{
+	padding-left: 6%;
+	padding-right: 6%;
+	font-weight: 100;
+	font-size: 0.9em;
+}
+
+.bloc-2{
+	margin-top: 5%;
+	padding-bottom: 6%;
+}
+
+.partenaires{
+	background-color: #072740;
+	margin-bottom: 4%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.col-md-3 img:hover{
+	opacity: 0.9;
+	transition: all 0.3s;
+}

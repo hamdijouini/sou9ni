@@ -1,0 +1,158 @@
+@media only screen and (max-width: 992px){
+	.col-sm-8{
+	margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px){
+  
+  	.red-text{
+		margin-left: 5%;
+	}
+  
+  input[type="submit"]{
+	  margin-left: 27%;
+  }
+	
+  #googleMap{
+	  height: 300%;
+	  margin-bottom: 10%;
+  }
+  
+  .form{
+	  margin-top: 42%;
+  }
+    
+  .item-left{
+	margin-left: -4%;
+  }
+
+  .item-right{
+	  margin-left: -2%;
+  }
+}
+
+@media only screen and (max-width: 575px){
+
+  .col-sm-6{
+	  text-align: left;
+	  margin-left: 6%;
+  }
+ 
+  .counter{
+	  margin-bottom: -5%;
+  }
+}
+
+
+
+@media only screen and (max-width: 537px){
+	
+	input[type="submit"]{
+		margin-left: 26%;
+	}
+}
+
+@media only screen and (max-width: 520px){
+	
+	input[type="submit"]{
+		margin-left: 24%;
+	}
+}
+
+@media only screen and (max-width: 490px){
+	
+	input[type="submit"]{
+		margin-left: 23%;
+	}
+}
+
+@media only screen and (max-width: 470px){
+	
+	input[type="submit"]{
+		margin-left: 21%;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	
+	input[type="submit"]{
+		margin-left: 19%;
+	}
+}
+
+@media only screen and (max-width: 430px){
+	
+	input[type="submit"]{
+		margin-left: 17%;
+	}
+}
+
+@media only screen and (max-width: 410px){
+	
+	input[type="submit"]{
+		margin-left: 15%;
+	}
+}
+
+@media only screen and (max-width: 390px){
+	
+	input[type="submit"]{
+		margin-left: 13%;
+	}
+}
+
+@media only screen and (max-width: 370px){
+	
+	input[type="submit"]{
+		margin-left: 12%;
+	}
+}
+
+@media only screen and (max-width: 350px){
+	
+	input[type="submit"]{
+		margin-left: 10%;
+	}
+}
+
+@media only screen and (max-width: 330px){
+	
+	input[type="submit"]{
+		margin-left: 8%;
+	}
+}
+
+@media only screen and (max-width: 310px){
+	
+	input[type="submit"]{
+		margin-left: 6%;
+	}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px){
+	
+	input[type="submit"]{
+		margin-right: -30%;
+	}
+}
+
+@media only screen and (max-width: 992px) and (min-width: 767px){
+	
+	.red-text{
+		margin-left: 15%;
+	}
+	
+	input[type="submit"]{
+		margin-right: -3%;
+	}
+	
+}
+
+@media only screen and (max-width: 767px) and (min-width: 575px){
+	
+	.counter>.container>.row:nth-child(1){
+		margin-left: 4%;
+	}
+	
+}

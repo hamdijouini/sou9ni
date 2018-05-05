@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/** Header**/
+
+.header{
+	z-index: 1;
+    background-image: url("../images/speed.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.header-overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 2%;
+  z-index: 1;
+}
+
+h1{
+  padding-top: 5%;
+  color: #fff;
+}
+
+/** Breadcrumb **/
+
+.mybreadcrumb {
+    list-style: none;
+    background-color: transparent;
+    padding-bottom: 5%;
+}
+
+.mybreadcrumb li {
+    display: inline;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.mybreadcrumb-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mybreadcrumb li a:hover {
+    opacity: 0.9;
+    transition: all 0.3s;
+    text-decoration: underline;
+}
+
+/** Content **/
+
+p{
+  font-size: 22px;
+  color: #082c49;
+  font-weight: 500;
+}
+
+
+/** Form control**/
+
+label{
+  font-size: 14px;
+  font-weight: 600;
+  color: #082c49;
+}
+
+.form-control{
+  border: 1px solid #fff;
+  border-bottom: 1px solid #9b9b9b;
+  border-radius: 0%;
+  width: 100%;
+  padding-left: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #082c49;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input{
+	background-color: transparent;
+}
+
+input[type="submit"]{
+  background-color: #082c49;
+  color: #fff;
+  border-radius: 0%;
+  border: 0;
+  padding: 10px 15px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/** Slider range **/
+
+#slider-range {
+    -webkit-appearance: none;
+    height: 2px;
+    max-width: 100%;
+    margin-bottom: 8%;
+    margin-left: 4%;
+	margin-right: 4%;
+	background-color: red;
+    -webkit-transition: .2s;
+	  -moz-transition: .2s;
+	  -o-transition: .2s;
+    transition: opacity .2s;
+}
+
+#slider-range:hover {
+    opacity: 1;
+}
+
+#amount{
+  font-weight: 600;
+  font-size: 14px;
+  color: #082c49;
+  border: 0;
+  padding-bottom: 2%;
+}
+
+.btn{
+	border-radius: 0%;
+}
+
+.btn-search{
+	background-color: #082c49;
+	padding: 4% 14%;
+	font-size: 16px;
+	font-weight: 400;
+
+}
+
+.btn-search:hover{
+  border: 1px solid #ff9c19;
+  background-color: #ff9c19;
+  transition: all 0.3s ease-in-out ;
+}
+
+label{
+	color: #cfcfcf;
+}
+
+.search-bloc{
+	z-index: 2;
+	background-color: #fff;
+	margin-top: -4%;
+	margin-bottom: 10%;
+	padding: 2% 2%;
+	box-shadow: 0px 6px 24px #cfcfcf;
+}

@@ -1,0 +1,40 @@
+.social-icons ul {
+    margin-top: 3%;
+}
+.social-icons ul li{
+    list-style: none;
+    display: inline;
+    padding-left: 14px;
+}
+
+.social-icons ul li a span{
+  padding-right: 20px;
+}
+
+.twitter-icon{
+  background: url("../images/twitter-icon.png") no-repeat;
+}
+
+.facebook-icon{
+  background: url("../images/facebook-icon.png") no-repeat;
+}
+
+.youtube-icon{
+  background: url("../images/youtube-icon.png") no-repeat;
+}
+
+/** hover effects on social icons**/
+.twitter-icon:hover{
+  background: url("../images/twitter-icon-hover.png") no-repeat;
+  transition: all ease-in-out 0.2s;
+}
+
+.facebook-icon:hover{
+  background: url("../images/facebook-icon-hover.png") no-repeat;
+  transition: all ease-in-out 0.2s;
+}
+
+.youtube-icon:hover{
+  background: url("../images/youtube-icon-hover.png") no-repeat;
+  transition: all ease-in-out 0.2s;
+}

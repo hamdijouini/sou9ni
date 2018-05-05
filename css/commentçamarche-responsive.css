@@ -1,0 +1,46 @@
+@media only screen and (max-width: 766px){
+	
+	.partenaires{
+		margin-bottom: 0%;
+	}
+}
+
+@media only screen and (max-width: 992px) and (min-width: 767px){
+	
+	h5{
+		margin-left: 1%;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	
+	h5{
+		margin-left: 1%;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	
+	.partenaires{
+		margin-bottom: -2%;
+	}
+	
+	h5{
+		margin-left: 6%;
+	}
+}
+
+
+@media only screen and (max-width: 420px){
+	
+	h5{
+		margin-left: 8%;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	
+	h5{
+		font-size: 1.1em;
+	}
+}
