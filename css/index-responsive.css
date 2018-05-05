@@ -4,7 +4,7 @@
 	 }
 
    .header-title{
-     font-size: 2em;
+     font-size: 2.5em;
    }
 
 	.form-title{
@@ -15,8 +15,8 @@
 
 @media only screen and (max-width: 460px) {
 
-	.btn-search{
-		padding: 5% 10%;
+  .btn-search{
+	padding: 4% 14% !important;
   }
 
   .testimonials-icon{
@@ -26,6 +26,15 @@
   .testimonials-icon img{
     height: 12%;
     width: 12%;
+  }
+  
+  .header-title{
+	margin-left: 4%;
+	padding-right: -4%;
+  }
+  
+  .header-text{
+	  font-size: 15px;
   }
 
 }
@@ -46,7 +55,7 @@
   }
 
 	.btn-search img{
-		margin-right: 10px;
+	margin-right: 10px;
     height: 12%;
     width: 12%;
   }
@@ -55,12 +64,12 @@
 @media only screen and (max-width: 360px) {
 
 	.btn-search{
-		font-size: 14px;
-		padding: 3% 6%;
+	font-size: 15px;
+	padding: 5% 15%;
     }
 
 	.btn-search img{
-		margin-right: 8px;
+	margin-right: 8px;
     height: 10%;
     width: 10%;
     }
