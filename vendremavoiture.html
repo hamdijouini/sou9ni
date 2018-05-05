@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+
+      <title>Vendre ma voiture</title>
+
+      <meta charset="utf-8">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Google Fonts -->
+        <link href='css/google-font.css' rel='stylesheet' type='text/css'>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+        <!-- Social icons CSS -->
+        <link rel="stylesheet" type="text/css" href="css/social-icons.css">
+
+        <!-- Menu CSS -->
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+
+        <!-- Footer CSS -->
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+        <!-- Responsive menu CSS -->
+        <link rel="stylesheet" type="text/css" href="css/menu-responsive.css">
+
+        <!-- Responsive footer CSS -->
+        <link rel="stylesheet" type="text/css" href="css/footer-responsive.css">
+
+       <!-- Style CSS -->
+       <link rel="stylesheet" type="text/css" href="css/vendremavoiture.css">
+
+       <!-- Popup CSS -->
+       <link rel="stylesheet" type="text/css" href="css/popup.css">
+
+       <!-- Media query CSS -->
+       <link rel="stylesheet" type="text/css" href="css/vendremavoiture-responsive.css">
+
+        <!-- Burger CSS -->
+        <link rel="stylesheet" type="text/css" href="css/burger.css">
+
+        <!-- Animate CSS -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+   </head>
+
+  <body>
+    <!--Top -->
+      <div class="top-container">
+        <div class="container">
+          <div class="row wow slideInDown">
+            <div class="col-md-12">
+              <div class="social-icons">
+                <ul>
+                  <li><a href="#"><span class="icon twitter-icon"></span></a></li>
+                  <li><a href="#"><span class="icon youtube-icon"></span></a></li>
+                  <li><a href="#"><span class="icon facebook-icon"></span></a></li>
+
+                </ul>
+              </div>
+              <div class="top-item">
+                <a class="link-item" href="#" data-toggle="modal" data-target="#myModel1"><img src="images/contact.png"/>Connexion</a>
+              </div>
+
+              <div class="modal fade" id="myModel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="myModalLabel1">Connexion</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <span class="container">Vous n'avez pas un compte ? <u><a href="#" data-toggle="modal" data-target="#myModel3">S'inscrire</u></a></span>
+                      <form method="POST" action="" class="popup-form">
+                        <div class="form-group">
+                          <label for="InputEmail1">Adresse mail</label>
+                          <input type="email" class="form-control" id="InputEmail1" name="email" placeholder="Entrer votre adresse mail">
+                          <small id="emailHelp1" class="form-text text-muted">Nous ne partagerons jamais votre email avec quelqu'un.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="InputPassword">Mot de passe</label>
+                          <input type="password" class="form-control" id="InputPassword" name="mdp" placeholder="Entrer votre mot de passe">
+                          <small id="passwordHelp" class="form-text text-muted"><a href="#" data-toggle="modal" data-target="#myModel2"><u>Mot de passe oublié ?</u></a></small>
+                        </div>
+                        <div class="form-group text-center">
+                          <button type="submit" class="btn btn-primary">Se connecter</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="myModel2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="myModalLabel2">Récupérer votre mot de passe</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span class="model2" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <form method="POST" action="" class="popup-form">
+                        <div class="form-group">
+                          <label for="InputEmail2">Adresse mail</label>
+                            <input type="email" class="form-control" id="InputEmail2" name="email" placeholder="Entrer votre adresse mail">
+                            <small id="emailHelp2" class="form-text text-muted">Nous ne partagerons jamais votre email avec quelqu'un.</small>
+                        </div>
+                        <div class="form-group text-center">
+                          <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="myModel3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="myModalLabel2">Créer un nouveau compte</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span class="model3" aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <form method="POST" action="" class="popup-form">
+                          <input type="hidden" name="id" id="id">
+                        <div class="form-group">
+                          <label for="nom">Nom</label>
+                            <input id="nom" name="nom" class="form-control-popup form-control-popup-nom" placeholder="Entrer votre nom" required>
+                            <small class="form-text error-message error-message-nom">Le nom doit être sous la forme de: "foulen"</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="prenom">Prénom</label>
+                            <input id="prenom" name="prenom" class="form-control-popup form-control-popup-prenom" placeholder="Entrer votre prénom" required>
+                            <small class="form-text error-message error-message-prenom">Le prénom doit être sous la forme de: "foulen" ou "ben foulen"</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="tel">Numéro de téléphone</label>
+                            <input id="tel" name="tel" class="form-control-popup form-control-popup-tel" placeholder="Entrer votre numéro de téléphone" required>
+                            <small class="form-text error-message error-message-tel">Le numéro de téléphone doit être sous la forme de: "12345678"</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Adresse mail</label>
+                            <input id="email" name="email" class="form-control-popup form-control-popup-email" placeholder="Entrer votre adresse mail" required>
+                            <small class="form-text error-message error-message-email">L'adresse mail doit être sous la forme de: "xxxx@xxx.xx"</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="adresse">Adresse</label>
+                            <input id="adresse" name="adresse" class="form-control-popup form-control-popup-adresse" placeholder="Entrer votre adresse" required>
+                            <small class="form-text error-message error-message-adresse">L'adresse doit être sous la forme de cet exemple: "Av. Hédi Nouira, Résidence Maya D1 Ennasr II"</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="region">Région</label>
+                            <select name="region" class="form-control-popup form-control-popup-region" id="region" required>
+                            <option value="" disabled="disabled" selected="selected">Veuillez choisir votre région</option>
+                            <option value="Beja">Beja</option>
+                            <option value="Bizerte">Bizerte</option>
+                            <option value="Gabes">Gabes</option>
+                            <option value="Gafsa">Gafsa</option>
+                            <option value="Grand Tunis">Grand Tunis</option>
+                            <option value="Jendouba">Jendouba</option>
+                            <option value="Kairouan">Kairouan</option>
+                            <option value="Kasserine">Kasserine</option>
+                            <option value="Kebili">Kebili</option>
+                            <option value="Le Kef">Le Kef</option>
+                            <option value="Mahdia">Mahdia</option>
+                            <option value="Medenine">Medenine</option>
+                            <option value="Monastir">Monastir</option>
+                            <option value="Nabeul">Nabeul</option>
+                            <option value="Sfax">Sfax</option>
+                            <option value="Sidi Bouzid">Sidi Bouzid</option>
+                            <option value="Siliana">Siliana</option>
+                            <option value="Sousse">Sousse</option>
+                            <option value="Tataouine">Tataouine</option>
+                            <option value="Tozeur">Tozeur</option>
+                            <option value="Zaghouan">Zaghouan</option>
+                          </select>
+                            <small class="form-text error-message error-message-region">Veuillez choisir votre région</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="login">Login</label>
+                            <input id="login" name="login" class="form-control-popup form-control-popup-login" placeholder="Créer un login" required>
+                            <small class="form-text error-message error-message-login">Le login doit être compris entre 5 et 20 caractéres</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="mdp">Mot de passe</label>
+                            <input type="password" id="mdp" name="mdp" class="form-control-popup form-control-popup-mdp" placeholder="Entrer votre mot de passe" required>
+                            <small class="form-text error-message error-message-mdp-1">Votre mot de passe est trop court</small>
+                            <small class="form-text error-message error-message-mdp-2">Votre mot de passe est trop long</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="mdp2">Confirmation de mot de passe</label>
+                            <input type="password" id="mdp2" class="form-control-popup form-control-popup-mdp2" placeholder="Retaper votre mot de passe" required>
+                            <small class="form-text error-message error-message-mdp-3">Les mots de passe ne correspondent pas. Voulez-vous réessayer ?</small>
+                            <small class="form-text error-message error-message-mdp-4">Le mot de passe ne doit pas être vide</small>
+                        </div>
+
+                        <div class="form-group text-center">
+                          <button type="submit" class="btn btn-primary">S'inscrire</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img class="logo" src="images/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-control-popups="navbarSupportedContent22"
+      aria-expanded="true" aria-label="Toggle navigation">
+            <div class="animated-icon4">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">ACHETER UNE VOITURE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">COMMENT ÇA MARCHE ?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">NOUS CONTACTER</a>
+              </li>
+              <li class="nav-item">
+                <span><a class="nav-link" href="#">VENDRE MA VOITURE</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+   <!-- Header -->
+    <header class="header">
+        <div class="header-overlay">
+           <div class="container header-container">
+             <div class="row text-center">
+                <div class="col-md-12 col-sm-12">
+                  <h1>Vendre ma voiture</h1>
+                </div>
+              </div>
+              <div class="row text-center">
+                <div class="col-md-12 col-sm-12">
+                    <ul class="mybreadcrumb">
+                      <li class="mybreadcrumb-item"><a href="index.html">Acceuil</a></li>
+                      <li class="mybreadcrumb-item"> > Vendre ma voiture</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+    </header>
+
+  <!-- content section-->
+   <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <p class="title">1. Détails sur votre voiture :</p>
+            <form enctype="multipart/form-data" method="POST" action="" class="form" name="form">
+              <div class="row">
+                <div class="col-md-5">
+                  <input type="hidden" name="id" id="id">
+                  <div class="form-group form-group-left">
+                    <label for="titre">TITRE DE L'ANNONCE<span class="required">  *</span></label>
+                      <input id="titre" name="titre" class="form-control form-control-titre" placeholder="ex: Nissan en très bon êtat" required>
+                      <small class="form-text error-form-message error-message-titre">Veuillez entrer un titre bien rédigé sous la forme d'une chaîne de caractéres comprise entre 10 et 30 caractéres.</small>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                   <div class="form-group form-group-right">
+                    <label for="prix">PRIX en DT<span class="required">  *</span></label>
+                      <input id="prix" name="prix" class="form-control form-control-prix" placeholder="ex: 20000" required>
+                      <small class="form-text error-form-message error-message-prix">Veuillez entrer un prix valide</small>
+                  </div>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="form-group">
+                    <label for="marque">MARQUE<span class="required">  *</span></label>
+                      <select name="marque" class="form-control form-control-marque" id="marque" required onChange='filltheselect(this.name, this.value)'>
+                        <option value="" disabled="disabled" selected="selected">Choisir une marque</option>
+                        <!-- Form List Script JS -->
+                        <script src="js/list.js"></script>
+                        <script>
+                          for (i=0; i<marque.length; i++){
+                          document.write("<option value=\"" +marque[i][0]+ "\">" +marque[i][1]);}
+                        </script>
+
+                    </select>
+                      <small class="form-text error-form-message error-message-marque">Veuillez séléctionner la marque de votre voiture</small>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="form-group form-group-right">
+                    <label for="modele">MODELE<span class="required">  *</span></label>
+                      <select name="modele" class="form-control form-control-modele" id="modele" required onChange='filltheselect(this.name, this.value)'>
+                        <option value="" disabled="disabled" selected="selected">Choisir un modéle</option>
+                        <!-- Modele List Script JS -->
+                        <script src="js/list-modele.js"></script>
+                    </select>
+                      <small class="form-text error-form-message error-message-modele">Veuillez séléctionner le modéle de votre voiture</small>
+                  </div>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="form-group form-group-left">
+                    <label for="titre">KILOMÉTRAGE<span class="required">  *</span></label>
+                      <input id="kilometrage" name="kilometrage" class="form-control form-control-kilometrage" placeholder="ex: 65000KM" required>
+                      <small class="form-text error-form-message error-message-kilometrage">Veuillez entrer une valeur de kilométrage valide</small>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                   <div class="form-group form-group-right">
+                    <label for="mise">MISE EN CIRCULATION<span class="required">  *</span></label>
+                      <input id="mise" name="mise" class="form-control form-control-mise" placeholder="ex: 2012" required>
+                      <small class="form-text error-form-message error-message-mise">Veuillez indiquer la mise en circulation de votre véhicule</small>
+                  </div>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="form-group form-group-left">
+                    <label for="prop">PROPRIÉTAIRE<span class="required">  *</span></label>
+                        <select name="prop" class="form-control form-control-prop" id="prop" required>
+                          <option value="" disabled="disabled" selected="selected">Choisir le propriétaire</option>
+                          <option value="1">1ère main</option>
+                          <option value="2">2éme main</option>
+                        </select>
+                        <small class="form-text error-form-message error-message-prop">Veuillez indiquer le propiétaire de cette voiture</small>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                  <div class="form-group form-group-right">
+                    <label for="carburant">CARBURANT<span class="required">  *</span></label>
+                        <select name="carburant" class="form-control form-control-carburant" id="carburant" required>
+                          <option value="" disabled="disabled" selected="selected">Choisir le type d'énérgie</option>
+                          <option value="Essence">Essence</option>
+                          <option value="Électrique">Électrique</option>
+                          <option value="Hybride">Hybride</option>
+                          <option value="Diesel">Diesel</option>
+                        </select>
+                        <small class="form-text error-form-message error-message-carburant">Veuillez séléctionner le type de carburant de votre véhicule</small>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="form-group form-group-left">
+                    <label for="transmission">TRANSMISSION<span class="required">  *</span></label>
+                        <select name="transmission" class="form-control form-control-transmission" id="transmission" required>
+                          <option value="" disabled="disabled" selected="selected">Choisir la transmission</option>
+                          <option value="Traction avant (FWD)">Traction avant (FWD)</option>
+                          <option value="Propulsion arrière (RWD)">Propulsion arrière (RWD)</option>
+                          <option value="Traction intégrale (4WD)">Traction intégrale (4WD)</option>
+                          <option value="Transmission intégrale (AWD)">Transmission intégrale (AWD)</option>
+                        </select>
+                        <small class="form-text error-form-message error-message-transmission">Veuillez choisir la transmission de votre véhicule</small>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                  <div class="form-group form-group-right">
+                    <label for="carrosserie">CARROSSERIE <span class="required">  *</span></label>
+                        <select name="carrosserie" class="form-control form-control-carrosserie" id="carrosserie" required>
+                          <option value="" disabled="disabled" selected="selected">Choisir le type de carrosserie</option>
+                          <option value="Berline">Berline</option>
+                          <option value="Break">Break</option>
+                          <option value="Coupé">Coupé</option>
+                          <option value="Cabriolet">Cabriolet</option>
+                          <option value="Limousine">Limousine</option>
+                          <option value="Roadster">Roadster</option>
+                          <option value="Spider">Spider</option>
+                          <option value="Pick up">Pick up</option>
+                        </select>
+                        <small class="form-text error-form-message error-message-carrosserie">Veuillez choisir le type de carrosserie de votre véhicule</small>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="form-group form-group-left">
+                    <label for="puissance">PUISSANCE FISCALE<span class="required">  *</span></label>
+                        <select name="puissance" class="form-control form-control-puissance" id="puissance" required>
+                          <option value="" disabled="disabled" selected="selected">Choisir la puissance fiscale</option>
+                          <option value="1 CV">1 CV</option>
+                          <option value="2 CV">2 CV</option>
+                          <option value="3 CV">3 CV</option>
+                          <option value="4 CV">4 CV</option>
+                          <option value="5 CV">5 CV</option>
+                          <option value="6 CV">6 CV</option>
+                          <option value="7 CV">7 CV</option>
+                          <option value="8 CV">8 CV</option>
+                          <option value="9 CV">9 CV</option>
+                          <option value="10 CV">10 CV ou plus</option>
+                        </select>
+                        <small class="form-text error-form-message error-message-puissance">Veuillez choisir la puissance fiscale de votre véhicule</small>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                  <div class="form-group form-group-right">
+                    <label for="vitesse">BOÎTE DE VITESSES<span class="required">  *</span></label>
+                        <select name="vitesse" class="form-control form-control-vitesse" id="vitesse" required>
+                          <option value="" disabled="disabled" selected="selected">Choisir la boîte de vitesses</option>
+                          <option value="Automatique">Automatique</option>
+                          <option value="Manuelle">Manuelle</option>
+                          <option value="Séquentielle">Séquentielle</option>
+                          <option value="Robotisé">Robotisé</option>
+                        </select>
+                        <small class="form-text error-form-message error-message-vitesse">Veuillez séléctionner le type de boîte de vitesses de votre véhicule</small>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="form-group form-group-left">
+                    <label for="description">DESCRIPTION<span class="required">  *</span></label>
+                        <textarea id="description" name="description" placeholder="min: 100 caractéres / max: 500 caractéres" onkeyup="countChar(this)"></textarea>
+                        <small class="form-text error-form-message error-message-description-1">Veuillez décrire votre voiture en quelques mots</small>
+                        <small class="form-text error-form-message error-message-description-2">Vous avez dépasser le nombre de caratéres</small>
+                        <small class="counter">
+                          <script>
+                          function countChar(val) {
+                            var len = val.value.length;
+                            if (len >= 501) {
+                              val.value = val.value.substring(0, 500);
+                            } else {
+                              $('.counter').text(len);
+                            }
+                          };
+
+                          </script>
+                        </small>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+
+              <p class="title">2. Equipements :</p>
+                  <div class="container">
+                  <div class="row">
+
+                    <div class="col-md-5">
+                      <div class="item-left">
+                        <input name="climatisation" type="checkbox"><label class="item">Climatisation</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5">
+                      <div class="item-right">
+                        <input name="bluetooth" type="checkbox"><label class="item">Bluetooth</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2"></div>
+                  </div>
+                  <div class="row">
+
+                    <div class="col-md-5">
+                      <div class="item-left">
+                        <input name="jantes" type="checkbox"><label class="item">Jantes alliages</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5">
+                      <div class="item-right">
+                        <input name="sieges" type="checkbox"><label class="item">Sièges en cuir</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2"></div>
+                  </div>
+                  <div class="row">
+
+                    <div class="col-md-5">
+                      <div class="item-left">
+                        <input name="navigation" type="checkbox"><label class="item">Navigation GPS</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5">
+                      <div class="item-right">
+                        <input name="regulateur" type="checkbox"><label class="item">Régulateur vitesse</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5 col-sm-12"></div>
+                    <div class="col-md-2 col-sm-12">
+                      <input type="button" value="Tout séléctionner">
+                    </div>
+                    <div class="col-md-5 col-sm"></div>
+                  </div>
+                </div>
+
+              <p class="title">3. Photos :</p>
+                      <div class="row">
+                        <div class="col-md-11">
+                          <div class="photo">
+                          <div class="photo-text">
+                            <p class="photo-alert">LE POIDS DE CHAQUE PHOTO NE DOIT PAS DÉPASSER 5MO AVEC UN FORMAT JPG, JPEG OU PNG)</p>
+                            <small class="photo-small-text">Sélectionnez plusieurs images en appuyant sur le bouton <kbd>ctrl</kbd></small>
+                          </div>
+                            <label class="btn-default btn-file">
+                                Cliquez ou faîtes glisser vos photos ici <input name="photo" type="file" multiple="multiple" required></br>
+                                <img class="img-fluid" src="images/camera.png" alt="camera">
+                                <span class="form-control-file"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                      </div>
+
+              <div class="row">
+                <div class="col-md-3 col-sm-12">
+                  <p class="red-text">* Champs obligatoires</p>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-6 col-sm-12 text-center">
+                    <input type="reset" value="Annuler">
+                    <input type="submit" value="Envoyer">
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+
+              </form>
+            </div>
+
+          <div class="col-md-4 col-sm-12 text-center">
+            <a class="pub1" href="#"><img class="img-fluid" src="images/pub1.png" alt="backpack"></a>
+            <a class="pub2" href="#"><img class="img-fluid" src="images/pub2.png" alt="explore now"></a>
+          </div>
+
+        </div>
+      </div>
+   </section>
+
+   <!-- footer -->
+   <footer class="footer">
+     <div class="container">
+       <div class="row  wow slideInRight" data-wow-delay="0s" data-wow-duration="1.3s">
+         <div class="col-md-12">
+           <div class="social-icons">
+             <ul>
+               <li><a href="#"><span class="icon twitter-icon"></span></a></li>
+               <li><a href="#"><span class="icon youtube-icon"></span></a></li>
+               <li><a href="#"><span class="icon facebook-icon"></span></a></li>
+             </ul>
+           </div>
+           <div class="footer-menu">
+             <ul>
+               <li><a class="link-item" href="#">ACHETER UNE VOITURE</a></li>
+               <li><a class="link-item" href="#">COMMENT ÇA MARCHE ?</a></li>
+               <li><a class="link-item" href="#">NOUS CONTACTER</a></li>
+               <li><a class="link-item" href="#" data-toggle="modal" data-target="#myModel1">CONNEXION</a></li>
+             </ul>
+           </div>
+           <div class="modal fade" id="myModel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+             <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h5 class="modal-title" id="myModalLabel1">Connexion</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                   </button>
+                 </div>
+                 <div class="modal-body">
+                   <span class="container">Vous n'avez pas un compte ? <u><a href="#" data-toggle="modal" data-target="#myModel3">S'inscrire</u></a></span>
+                   <form method="POST" action="" class="popup-form">
+                     <div class="form-group">
+                       <label for="InputEmail1">Adresse mail</label>
+                       <input type="email" class="form-control" id="InputEmail1" name="email" placeholder="Entrer votre adresse mail">
+                       <small id="emailHelp1" class="form-text text-muted">Nous ne partagerons jamais votre email avec quelqu'un.</small>
+                     </div>
+                     <div class="form-group">
+                       <label for="InputPassword">Mot de passe</label>
+                       <input type="password" class="form-control" id="InputPassword" name="mdp" placeholder="Entrer votre mot de passe">
+                       <small id="passwordHelp" class="form-text text-muted"><a href="#" data-toggle="modal" data-target="#myModel2"><u>Mot de passe oublié ?</u></a></small>
+                     </div>
+                     <div class="form-group text-center">
+                       <button type="submit" class="btn btn-primary">Se connecter</button>
+                     </div>
+                   </form>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="modal fade" id="myModel2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+             <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h5 class="modal-title" id="myModalLabel2">Récupérer votre mot de passe</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span class="model2" aria-hidden="true">&times;</span>
+                     </button>
+                 </div>
+                 <div class="modal-body">
+                   <form method="POST" action="" class="popup-form">
+                     <div class="form-group">
+                       <label for="InputEmail2">Adresse mail</label>
+                         <input type="email" class="form-control" id="InputEmail2" name="email" placeholder="Entrer votre adresse mail">
+                         <small id="emailHelp2" class="form-text text-muted">Nous ne partagerons jamais votre email avec quelqu'un.</small>
+                     </div>
+                     <div class="form-group text-center">
+                       <button type="submit" class="btn btn-primary">Envoyer</button>
+                     </div>
+                   </form>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="modal fade" id="myModel3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+             <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h5 class="modal-title" id="myModalLabel2">Créer un nouveau compte</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span class="model3" aria-hidden="true">&times;</span>
+                     </button>
+                 </div>
+                 <div class="modal-body">
+                   <form method="POST" action="" class="popup-form">
+                       <input type="hidden" name="id" id="id">
+                     <div class="form-group">
+                       <label for="nom">Nom</label>
+                         <input id="nom" name="nom" class="form-control-popup form-control-popup-nom" placeholder="Entrer votre nom" required>
+                         <small class="form-text error-message error-message-nom">Le nom doit être sous la forme de: "foulen"</small>
+                     </div>
+                     <div class="form-group">
+                       <label for="prenom">Prénom</label>
+                         <input id="prenom" name="prenom" class="form-control-popup form-control-popup-prenom" placeholder="Entrer votre prénom" required>
+                         <small class="form-text error-message error-message-prenom">Le prénom doit être sous la forme de: "foulen" ou "ben foulen"</small>
+                     </div>
+                     <div class="form-group">
+                       <label for="tel">Numéro de téléphone</label>
+                         <input id="tel" name="tel" class="form-control-popup form-control-popup-tel" placeholder="Entrer votre numéro de téléphone" required>
+                         <small class="form-text error-message error-message-tel">Le numéro de téléphone doit être sous la forme de: "12345678"</small>
+                     </div>
+                     <div class="form-group">
+                       <label for="email">Adresse mail</label>
+                         <input id="email" name="email" class="form-control-popup form-control-popup-email" placeholder="Entrer votre adresse mail" required>
+                         <small class="form-text error-message error-message-email">L'adresse mail doit être sous la forme de: "xxxx@xxx.xx"</small>
+                     </div>
+                     <div class="form-group">
+                       <label for="adresse">Adresse</label>
+                         <input id="adresse" name="adresse" class="form-control-popup form-control-popup-adresse" placeholder="Entrer votre adresse" required>
+                         <small class="form-text error-message error-message-adresse">L'adresse doit être sous la forme de cet exemple: "Av. Hédi Nouira, Résidence Maya D1 Ennasr II"</small>
+                     </div>
+                     <div class="form-group">
+                       <label for="region">Région</label>
+                         <select name="region" class="form-control-popup form-control-popup-region" id="region" required>
+                         <option value="" disabled="disabled" selected="selected">Veuillez choisir votre région</option>
+                         <option value="Beja">Beja</option>
+                         <option value="Bizerte">Bizerte</option>
+                         <option value="Gabes">Gabes</option>
+                         <option value="Gafsa">Gafsa</option>
+                         <option value="Grand Tunis">Grand Tunis</option>
+                         <option value="Jendouba">Jendouba</option>
+                         <option value="Kairouan">Kairouan</option>
+                         <option value="Kasserine">Kasserine</option>
+                         <option value="Kebili">Kebili</option>
+                         <option value="Le Kef">Le Kef</option>
+                         <option value="Mahdia">Mahdia</option>
+                         <option value="Medenine">Medenine</option>
+                         <option value="Monastir">Monastir</option>
+                         <option value="Nabeul">Nabeul</option>
+                         <option value="Sfax">Sfax</option>
+                         <option value="Sidi Bouzid">Sidi Bouzid</option>
+                         <option value="Siliana">Siliana</option>
+                         <option value="Sousse">Sousse</option>
+                         <option value="Tataouine">Tataouine</option>
+                         <option value="Tozeur">Tozeur</option>
+                         <option value="Zaghouan">Zaghouan</option>
+                       </select>
+                         <small class="form-text error-message error-message-region">Veuillez choisir votre région</small>
+                     </div>
+                     <div class="form-group">
+                       <label for="mdp">Mot de passe</label>
+                         <input type="password" id="mdp" name="mdp" class="form-control-popup form-control-popup-mdp" placeholder="Entrer votre mot de passe" required>
+                         <small class="form-text error-message error-message-mdp-1">Votre mot de passe est trop court</small>
+                         <small class="form-text error-message error-message-mdp-2">Votre mot de passe est trop long</small>
+                     </div>
+                     <div class="form-group">
+                       <label for="mdp2">Confirmation de mot de passe</label>
+                         <input type="password" id="mdp2" class="form-control-popup form-control-popup-mdp2" placeholder="Retaper votre mot de passe" required>
+                         <small class="form-text error-message error-message-mdp-3">Les mots de passe ne correspondent pas. Voulez-vous réessayer ?</small>
+                         <small class="form-text error-message error-message-mdp-4">Le mot de passe ne doit pas être vide</small>
+                     </div>
+
+                     <div class="form-group text-center">
+                       <button type="submit" class="btn btn-primary">S'inscrire</button>
+                     </div>
+                   </form>
+                 </div>
+               </div>
+             </div>
+            </div>
+
+           </div>
+           </div>
+       <hr/>
+       <div class="row wow slideInLeft" data-wow-delay="0s" data-wow-duration="1.3s">
+         <div class="col-md-2 col-sm-12">
+           <img src="images/small-logo.png">
+         </div>
+         <div class="col-md-8 col-sm-12">
+           <p>Av. Hédi Nouira, Résidence maya D1 ennasr II <br/>+216 71 827 484 | info@soukni.com.tn </p>
+         </div>
+         <div class="col-md-2 col-sm-12">
+           <p>MEDIANET</p>
+         </div>
+       </div>
+     </div>
+   </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- wow JS -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- Form-control-popup Script JS -->
+    <script src="js/form-control-popup.js"></script>
+
+    <!-- Form control Script JS -->
+    <script src="js/form-control.js"></script>
+
+    <!-- Custom Script JS -->
+    <script src="js/script.js"></script>
+
+  </body>
+
+</html>
