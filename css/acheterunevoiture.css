@@ -59,8 +59,6 @@ h1{
     text-decoration: underline;
 }
 
-/** Content **/
-
 p{
   font-size: 22px;
   color: #082c49;
@@ -68,7 +66,7 @@ p{
 }
 
 
-/** Form control**/
+/** Search Form control**/
 
 label{
   font-size: 14px;
@@ -138,14 +136,15 @@ input[type="submit"]{
 .btn-search{
 	background-color: #082c49;
 	padding: 4% 14%;
+	margin-top: 14%;
 	font-size: 16px;
 	font-weight: 400;
-
+	opacity: 1;
 }
 
 .btn-search:hover{
-  border: 1px solid #ff9c19;
-  background-color: #ff9c19;
+  background-color: #082c49;
+  opacity: 0.95;
   transition: all 0.3s ease-in-out ;
 }
 
@@ -157,7 +156,73 @@ label{
 	z-index: 2;
 	background-color: #fff;
 	margin-top: -4%;
-	margin-bottom: 10%;
+	margin-bottom: 3%;
 	padding: 2% 2%;
-	box-shadow: 0px 6px 24px #cfcfcf;
+	box-shadow: 0px 4px 20px #cfcfcf;
+}
+
+.result{
+	color: #555;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+/** annonces**/
+
+h4{
+	font-weight: 600;
+	color: #082c49;
+	margin-bottom: 5%;
+}
+
+.card{
+	border-radius: 0%;
+	margin-bottom: 8%;
+	margin-top: 5%;
+}
+
+.card-title,.card-text{
+	padding-left: 1%;
+	padding-right: -1%;
+	font-size: 16px;
+}
+
+.card-text{
+	font-weight: 700;
+}
+
+.card-text span{
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.card-title{
+	font-weight: 600;
+}
+
+.list-group ul li{
+	list-style: none;
+	display: inline;
+}
+
+.list-item-text{
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.small-card{
+	border-top: 1px solid #e0e0e0;
+	padding: 8px;
+}
+
+.small-card img{
+	padding-right: 8%;
+}
+
+.annonces>.container>.row{
+	margin-bottom: 5%;
+}
+
+.card-img-top{
+	border-radius: 0%;
 }
