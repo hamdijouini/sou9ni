@@ -382,6 +382,33 @@
 	
     <!-- Custom Script JS -->
     <script src="js/script.js"></script>
+	
+	 <!-- Chat Bot-->
+	 <script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiMwODJjNDkiLCJ3ZWIiOnsiYm90SWQiOiI1YWViOGQ5ODEyMGY2ZDAwMTQ1ODY3YTMiLCJ0aGVtZSI6IiMwODJjNDkiLCJsYWJlbCI6IkNoYXQifSwid2VsY29tZVRleHQiOiJWb3VzIGF2ZXogZGVzIHF1ZXN0aW9ucyA/IFZvdXMgdm91bGV6IGVzc2F5ZXIgdW5lIHZvaXR1cmUgPyBDbGlxdWVyIGljaSAhIn0=" async defer></script>
+	 <script>
+	 var chatDiv = document.createElement('div');
+	 chatDiv.className = 'fb-customerchat';
+	 chatDiv.setAttribute('page_id', '295038554365864');
+	 chatDiv.setAttribute('ref', '26142724504b031766688dcc9eb6e10d325dd6c21a3414ab2b');
+	 document.body.appendChild(chatDiv);
+
+	 window.fbAsyncInit = function() {
+	   FB.init({
+	     appId            : '2015199145383303',
+	     autoLogAppEvents : true,
+	     xfbml            : true,
+	     version          : 'v2.12'
+	   });
+	 };
+
+	 (function(d, s, id){
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) {return;}
+	    js = d.createElement(s); js.id = id;
+	    js.src = "https://connect.facebook.net/en_US/sdk.js";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));
+	  </script>
 
   </body>
 
