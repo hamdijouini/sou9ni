@@ -140,18 +140,18 @@
           <div class="col-md-6 col-sm-12">
             <form method="POST" action="message.php" class="form" name="form">
               <div class="row">
-		<input type="hidden" name="id" id="id" value="<?php if(isset($_SESSION["id"])) echo $_SESSION["id"];?>"/>
+		<input type="hidden" name="id" id="id"/>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="nom">NOM<span class="required">  *</span></label>
-                      <input id="nom" name="nom" class="form-control form-control-nom" placeholder="ex: foulen" value="<?php if(isset($_SESSION["nom"])) echo $_SESSION["nom"];?>" required>
+                      <input id="nom" name="nom" class="form-control form-control-nom" placeholder="ex: foulen" required>
                       <small class="form-text error-form error-message-nom">Le nom doit être sous la forme de : "foulen"</small>
                   </div>
                 </div>
                 <div class="col-md-6">
                    <div class="form-group">
                     <label for="prenom">PRÉNOM<span class="required">  *</span></label>
-                      <input id="prenom" name="prenom" class="form-control form-control-prenom" placeholder="ex: ben foulen" value="<?php if(isset($_SESSION["prenom"])) echo $_SESSION["prenom"];?>" required>
+                      <input id="prenom" name="prenom" class="form-control form-control-prenom" placeholder="ex: ben foulen" required>
                       <small class="form-text error-form error-message-prenom">Le prénom doit être sous la forme de : "foulen" ou "ben foulen"</small>
                   </div>
                 </div>
@@ -161,14 +161,14 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="tel">NUMÉRO DE TÉLÉPHONE<span class="required">  *</span></label>
-                      <input id="tel" name="tel" class="form-control form-control-tel" placeholder="ex: 12345678" value="<?php if(isset($_SESSION["tel"])) echo $_SESSION["tel"];?>" required>
+                      <input id="tel" name="tel" class="form-control form-control-tel" placeholder="ex: 12345678" required>
                       <small class="form-text error-form error-message-tel">Le numéro de téléphone doit être un numéro de 8 chiffres</small>
                   </div>
                 </div>
                 <div class="col-md-6">
                    <div class="form-group">
                     <label for="email">ADRESSE MAIL<span class="required">  *</span></label>
-                      <input id="email" name="email" class="form-control form-control-email" placeholder="ex: foulen@domain.com" value="<?php if(isset($_SESSION["email"])) echo $_SESSION["email"];?>" required>
+                      <input id="email" name="email" class="form-control form-control-email" placeholder="ex: foulen@domain.com" required>
                       <small class="form-text error-form error-message-email">L'adresse mail doit être sous la forme de : xxxx@xxx.com</small>
                   </div>
                 </div>
@@ -186,8 +186,8 @@
 			  </div>
 
 
-			  <div class="form-group form-group-description">
-                <label for="description">DESCRIPTION<span class="required">  *</span></label>
+			<div class="form-group form-group-description">
+                	<label for="description">DESCRIPTION<span class="required">  *</span></label>
                         <textarea id="description" name="description" placeholder="min: 100 caractéres / max: 500 caractéres" onkeyup="countChar(this)" required></textarea>
                         <small class="form-text error-form error-message-description-1">Veuillez décrire votre demande en quelques mots</small>
                         <small class="form-text error-form error-message-description-2">Vous avez dépasser le nombre de caratéres</small>
@@ -202,8 +202,8 @@
                             }
                           };
 
-						  </script>
-						</small>
+			</script>
+			</small>
               </div>
 
               <div class="row bloc-2">
