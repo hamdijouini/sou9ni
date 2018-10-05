@@ -1,1 +1,1 @@
-This website consists on selling used and certified cars in Tunisia.
+This website consists in selling used and certified cars in Tunisia online between individuals.
